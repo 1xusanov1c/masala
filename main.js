@@ -8,7 +8,7 @@ const museumPriceEuro = 120;
 const totalExpenses =
   (ticketPriceUSD + hotelPriceUSD) * dollarToSum + museumPriceEuro * euroToSum;
 
-const alisherMoney = prompt("Alisher, o'zingda qancha pul borligini kiriting (so'mda):");
+const alisherMoney = +prompt("Alisher, o'zingda qancha pul borligini kiriting (so'mda):");
 
 if (alisherMoney >= totalExpenses) {
   console.log("Oq yo‘l, Alisher!")
